@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Döviz Çevirici</title>
+  </head>
+  <body>
+    <h1>Döviz Çevirici</h1>
+    <label>Çevrilecek Döviz:</label>
+    <select id="fromCurrency">
+      <option value="USD">ABD Doları (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">İngiliz Sterlini (GBP)</option>
+      <option value="JPY">Japon Yeni (JPY)</option>
+      <option value="TRY">Türk Lirası (TRY)</option>
+    </select>
+    <br>
+    <label>Alınacak Döviz:</label>
+    <select id="toCurrency">
+      <option value="USD">ABD Doları (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">İngiliz Sterlini (GBP)</option>
+      <option value="JPY">Japon Yeni (JPY)</option>
+    </select>
+    <br>
+    <label>Miktar:</label>
+    <input type="number" id="amount" value="1">
+    <br><br>
+    <button onclick="convertCurrency()">Çevir</button>
+    <br><br>
+    <label>Sonuç:</label>
+    <span id="result"></span>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
